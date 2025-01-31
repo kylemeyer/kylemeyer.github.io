@@ -406,12 +406,7 @@ span.tags span:last-child:after {
 
 
 /* About */
-#about p a:hover {
-	border-bottom: transparent;
-	}
-	
 #about .post {
-	padding-bottom: 60px;
 	max-width: 600px;
 	margin: 0 auto;
 	}
