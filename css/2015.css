@@ -166,7 +166,7 @@ footer p {
 
 header h1 a,
 header a.active,
-header a:hover,
+
 footer h1 a,
 footer a.active,
 footer a:hover,
@@ -183,6 +183,7 @@ footer a:hover,
 header p a:hover,
 footer p a:hover {
  	background: #bf66e5;
+ 	color: #fff;
 	}
 
 .container {
@@ -302,7 +303,7 @@ h5 a {
 p a {
 	color: #131313;
 	text-decoration: none;
-	border-bottom: 1px groove #bf66e5;
+	border-bottom: 2px dotted #bf66e5;
 	}
 
 p a:hover,
@@ -310,16 +311,10 @@ p a:active,
 h3 a:hover,
 h5 a:hover {
 	text-decoration: none;
-	color: #131313;
+	color: #fff;
 	background: #bf66e5;
-/* 	color: #00bf83; */
-/* 	color: #a0a0a0; */
 	border-color: transparent;
 	cursor: pointer;
-	}
-
-h5 a:hover {
-	color: #131313;
 	}
 
 p b,
@@ -395,21 +390,6 @@ span.tags span:last-child:after {
 
 
 /* About */
-/*
-#about {
-	background: #131313;
-	}
-
-#about * {
-	color: #fff!important;
-	border-color: #fff!important;
-	}
-	
-#about header a:hover {
-	color: #999!important;
-	}
-*/
-
 #about p a:hover {
 	border-bottom: transparent;
 	}
