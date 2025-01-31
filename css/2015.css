@@ -25,11 +25,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   }
 
 *::-moz-selection {
-    background: #2EC51F
+    background: #ffff99
 	}
 
 *::selection {
-    background: #2EC51F
+    background: #ffff99
 	}
   
 strong, b {
