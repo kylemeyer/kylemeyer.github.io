@@ -20,11 +20,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   }
 
 *::-moz-selection {
-    background: #89ffe9
+    background: #bf66e5
 	}
 
 *::selection {
-    background: #89ffe9
+    background: #bf66e5
 	}
   
 strong, b {
@@ -182,7 +182,7 @@ header a:hover,
 footer a:hover,
 header p a:hover,
 footer p a:hover {
- 	background: #89ffe9
+ 	background: #bf66e5;
 	}
 
 .container {
@@ -302,7 +302,7 @@ h5 a {
 p a {
 	color: #131313;
 	text-decoration: none;
-	border-bottom: 1px solid #89ffe9;
+	border-bottom: 1px groove #bf66e5;
 	}
 
 p a:hover,
@@ -311,7 +311,7 @@ h3 a:hover,
 h5 a:hover {
 	text-decoration: none;
 	color: #131313;
-	background: #89ffe9;
+	background: #bf66e5;
 /* 	color: #00bf83; */
 /* 	color: #a0a0a0; */
 	border-color: transparent;
