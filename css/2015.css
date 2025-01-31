@@ -1,3 +1,8 @@
+/* Colors
+	Purple: #bf66e5
+	Green: #2EC51F
+	Blue: #0000EE */
+
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{display:inline-block}* html .clearfix{height:1%}.clearfix{display:block}
 
 html, body, div, span, applet, object, iframe,
@@ -20,11 +25,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   }
 
 *::-moz-selection {
-    background: #bf66e5
+    background: #2EC51F
 	}
 
 *::selection {
-    background: #bf66e5
+    background: #2EC51F
 	}
   
 strong, b {
@@ -38,35 +43,30 @@ em, i {
 img {
   -ms-interpolation-mode: bicubic
   }
-	
+
 a {
+  background: linear-gradient(0deg, #0000ee, #0000ee) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  padding-bottom: 2px;
+  --bg-h: 1px;
   text-decoration: none;
+  color: inherit;
+  line-height: 1;
   cursor: pointer;
-  position: relative;
+  color: #0000ee;
+  border-radius: 3px;
 }
 
-a:hover {
-	color: #bf66e5;
+a:where(:hover, :focus-visible),
+a.active {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
 }
 
-a::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    border-radius: 3px;
-    background-color: #bf66e5;
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-  }
-
-a:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
+a:visited {
+  color: #0000EE;
 }
+
 
 p img,
 .photo img {
@@ -110,17 +110,19 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   padding: 0;
+  font-size:18px;
+  line-height: 32px;
   }
 
 header, footer {
 	max-width: 1440px;
-	margin: 8vh auto;
+	margin: 56px auto;
 	height: 32px;
 	padding: 21px 48px 19px;
 	}
 
 footer {
-	margin-top: 20vh;
+	margin-top: 112px;
 	}
 
 #blog footer {
@@ -137,8 +139,6 @@ footer p {
 	margin: 0;
 	padding: 0;
 	width: 25%;
-	line-height: 32px;
-	font-size: 18px;
 	}
 
 header ol,
@@ -164,42 +164,7 @@ footer ol li {
 	
 header a,
 footer a {
-	color: #1e1e1c;
 	padding: 7px 0;
-	}
-	
-header h1 a,
-footer h1 a,
-header p a,
-footer p a {
-	padding-left: 0;
-	padding-right: 0;
-	}
-
-/* header a,
-header p a,
-header h1 span,
-footer a,
-footer p a,
-footer h1 span,
-header p,
-footer p {
-	text-decoration: none;
-	border: none;
-	color: #a0a0a0;
-	} 
-
-header h1 a,
-footer h1 a,
-header p a:hover,
-footer p a:hover {
-	color: #1e1e1c;
-	background: none;
-	}*/
-
-header a.active,
-footer a.active {
- 	color: #bf66e5;
 	}
 
 .container {
@@ -208,19 +173,15 @@ footer a.active {
 	margin: 0 auto;
 	}
 
-#blog .container {
-	max-width: 1080px;
-	}
-
 .post {
-  padding: 0 0 32vh;
+  padding: 0 0 224px;
   }
  
 .post.last {
 	padding: 0;
 	}
 
-h3, h4, h5, h6, p, pre, blockquote, .caption, .conversation_line {
+h3, h4, h5, h6, p, pre, blockquote, .conversation_line {
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
@@ -235,8 +196,8 @@ ul ul, ul ol {
 
 p.image {
   max-width: 100%;
-  margin-top: 52px;
-  margin-bottom: 26px;
+  margin-top: 48px;
+  margin-bottom: 28px;
   }
 
 ul#posts {
@@ -247,7 +208,7 @@ ul#posts li.post:last-child {
 	margin-bottom: 0;
 	}
   
-.regular_body, .quote_body, .caption, .conversation_line, ul#posts, #pagers, #header_image_div, ul#following {
+.regular_body, .quote_body, .conversation_line, ul#posts, #pagers, #header_image_div, ul#following {
   text-align: left;
   }
 
@@ -257,23 +218,14 @@ ul#posts li.post:last-child {
   }
 
 .regular_body .photo_div {
-	margin-bottom: 52px;
+	margin-bottom: 48px;
 	}
   
 .regular_body .photo div img,
 .regular_body .photo_div img,
 .regular_body img {
   max-width: 100%;
-  margin-bottom: 13px;
-  }
-
-.regular_body .caption p {
-  padding-top: 6px;
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.4em;
-  color: #888;
-  text-align: center;
+  margin-bottom: 12px;
   }
 			
 img.album_art_img {
@@ -281,9 +233,7 @@ img.album_art_img {
   }
 
 /* Styles */
-h3, h4, h5, h6, p, ul ul, ul ol, blockquote, pre, .caption {
-  font-size: 20px;
-  line-height: 28px;
+h3, h4, h5, h6, p, ul ul, ul ol, blockquote, pre {
   margin-bottom: 28px;
   text-align: left;
   }
@@ -300,36 +250,25 @@ h3 a {
 	}
 
 h4 {
-	color: #a0a0a0;
 	margin-bottom: 0;
 	}
 
 h5 {
-	color: #a0a0a0;
 	text-align: center;
 	margin-bottom: 26px;
+	color: #888;
 	}
-
+	
 h5 a {
-	color: #a0a0a0;
-	text-decoration: none;
-	border: 0;
-	}
-
-p a {
-	color: #131313;
-	text-decoration: none;
-	/* border-bottom: 2px dotted #bf66e5; */
-	}
+	color: #888;
+}
 
 p a:hover,
 p a:active,
 h3 a:hover,
 h5 a:hover {
 	text-decoration: none;
-	color: #bf66e5;
-	/* background: #bf66e5; 
-	border-color: transparent;*/
+	color: #0000EE;
 	cursor: pointer;
 	}
 
@@ -344,7 +283,7 @@ blockquote {
   
 ul ul,
 ul ol {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
   padding-left: 40px;
   }
 
@@ -380,38 +319,13 @@ code {
   line-height: 18px;
   }
 
-p.meta {
-	padding-top: 130px;
-	font-size: 14px;
-  color: #a0a0a0;
-  text-transform: lowercase;
-  }
-
-p.meta a {
-  color: #a0a0a0;
-  text-decoration: none;
-  }
-  
-span.tags {
-  text-transform: lowercase;
-  }
-
-span.tags span:after {
-  content: ",";
-  }
-
-span.tags span:last-child:after {
-  content: none;
-  }
-
-
 /* About */
 #about .post {
 	max-width: 600px;
 	margin: 0 auto;
 	}
 	
-#about .post p, #published h6 {
+#about .post p {
 	font-size: 24px;
 	line-height: 36px;
 	margin-bottom: 36px;
@@ -421,19 +335,15 @@ span.tags span:last-child:after {
 	margin-left: 0;
 	}
 	
-#published h6, #about .post #published p {
-	font-size: 18px;
-	line-height: 24px;
-	margin-bottom: 24px;
-}
 
 /* Work
 ------------------------------------------------------------*/
 #work .photo, .misc {
   padding: 0;
-  margin-bottom: 1.6vh;
-	background: #f8f8f9;
+  margin-bottom: 1vw;
+  background: #f8f8f9;
   position: relative;
+  border-radius: 6px;
   }
 			 
 .set .photo {
@@ -599,7 +509,7 @@ span.tags span:last-child:after {
 
 
 
-/* Mobile Sauce
+/* Mobile
 ------------------------------------------------------------*/
 @media screen and (max-width: 960px) {
 
@@ -612,7 +522,7 @@ body {
   padding-top: 0;
   }
   
-h3, h4, h5, p, ul ul, ul ol, blockquote, pre, .caption {
+h3, h4, h5, p, ul ul, ul ol, blockquote, pre {
 	font-size: 20px;
 	line-height: 28px;
 	}
@@ -669,7 +579,7 @@ p img,
   max-width: 100%;
   }
 
-h3, h4, h5, h6, p, pre, blockquote, .caption, .conversation_line {
+h3, h4, h5, h6, p, pre, blockquote, .conversation_line {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -704,6 +614,7 @@ blockquote p {
 	max-width: 100%;
 	margin: 0 auto 9px;
 	text-align: center;
+	border-radius: 0;
 	}
 
 #work .photo div img,
@@ -771,10 +682,7 @@ blockquote p {
 	background-size: auto 18px;
   background-position: 0 0;
 	}
-}
-
-@media screen and (max-width: 600px) {
-
+	
 .quotes p {
 	font-size: 20px;
 	line-height: 28px;
@@ -796,6 +704,5 @@ blockquote p {
   -webkit-column-count: 1;
   column-count: 1;
   background: none;
-	}
-	
+}
 }
