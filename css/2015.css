@@ -132,7 +132,6 @@ footer h1,
 footer p {
 	float: left;
 	margin: 0;
-	padding: 0;
 	width: 25%;
 	}
 
@@ -155,8 +154,12 @@ footer ol li {
 	padding: 0 12px;
 	display: inline-block;
 	}
-	
+
+header h1,
+header p,
 header a,
+footer h1,
+footer p,
 footer a {
 	padding: 7px 0 2px 0;
 	}
@@ -528,7 +531,7 @@ footer ol,
 footer h1 {
 	float: none;
 	margin: 0;
-	padding: 0;
+	padding: 7px 0 2px;
 	width: 100%;
 	line-height: 28px;
 	font-size: 18px;
@@ -545,11 +548,6 @@ footer h1,
 header p,
 footer p {
 	display: none;
-	}
-
-header ol a,
-footer ol a {
-	padding: 7px 12px;
 	}
 
 p img,
