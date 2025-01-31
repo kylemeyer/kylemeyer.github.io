@@ -108,9 +108,9 @@ body {
   color: #1e1e1c;
   background: #fff;
   text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	padding: 0;
-	}
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  }
 
 header, footer {
 	max-width: 1440px;
@@ -282,9 +282,9 @@ img.album_art_img {
 
 /* Styles */
 h3, h4, h5, h6, p, ul ul, ul ol, blockquote, pre, .caption {
-  font-size: 18px;
-  line-height: 26px;
-  margin-bottom: 26px;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 28px;
   text-align: left;
   }
   
@@ -613,8 +613,8 @@ body {
   }
   
 h3, h4, h5, p, ul ul, ul ol, blockquote, pre, .caption {
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 20px;
+	line-height: 28px;
 	}
  
 .container {
@@ -641,8 +641,8 @@ footer h1 {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	line-height: 24px;
-	font-size: 16px;
+	line-height: 28px;
+	font-size: 20px;
 	}
 
 header ol,
@@ -734,7 +734,7 @@ blockquote p {
 
 }
 
-@media screen and (max-width: 833px) {
+@media screen and (max-width: 600px) {
 .quotes {
 	padding: 50px 0;
 	margin: 0;
@@ -773,11 +773,11 @@ blockquote p {
 	}
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 600px) {
 
 .quotes p {
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 20px;
+	line-height: 28px;
 }
 
 #bcpanes .photo {
