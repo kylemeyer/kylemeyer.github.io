@@ -111,7 +111,7 @@ body {
   -webkit-font-smoothing: antialiased;
   padding: 0;
   font-size:18px;
-  line-height: 32px;
+  line-height: 28px;
   }
 
 header, footer {
@@ -392,11 +392,11 @@ code {
   }
   			
 .quotes {
-  padding: 14vh 0 12vh;
+  padding: 56px 0 56px;
 	}
 
 .quotes p {
-  margin: 0 0 78px;
+  margin: 0 0 12px;
   text-align: center;
   max-width: auto;
   width: 28.333%;
@@ -511,7 +511,7 @@ code {
 
 /* Mobile
 ------------------------------------------------------------*/
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 980px) {
 
 #tumblr_controls {
   display: none!important;
@@ -589,6 +589,11 @@ blockquote p {
 	max-width: 100%;
 	}
 
+.quotes p {
+	font-size: 16px!important;
+	line-height: 24px!important;
+}
+
 .post li {
   margin-right: 5%;
   }
@@ -645,15 +650,13 @@ blockquote p {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
 .quotes {
 	padding: 50px 0;
 	margin: 0;
 	}
 
 .quotes p {
-	font-size: 16px;
-	line-height: 24px;
 	float: none;
 	text-align: left;
 	padding: 0!important;
