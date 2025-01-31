@@ -38,11 +38,35 @@ em, i {
 img {
   -ms-interpolation-mode: bicubic
   }
-
+	
 a {
-	text-decoration: none;
-	cursor: pointer;
-	}
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+a:hover {
+	color: #bf66e5;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 3px;
+    background-color: #bf66e5;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
 
 p img,
 .photo img {
@@ -140,6 +164,7 @@ footer ol li {
 	
 header a,
 footer a {
+	color: #1e1e1c;
 	padding: 7px 0;
 	}
 	
@@ -151,7 +176,7 @@ footer p a {
 	padding-right: 0;
 	}
 
-header a,
+/* header a,
 header p a,
 header h1 span,
 footer a,
@@ -162,28 +187,19 @@ footer p {
 	text-decoration: none;
 	border: none;
 	color: #a0a0a0;
-	}
+	} 
 
 header h1 a,
-header a.active,
-
 footer h1 a,
-footer a.active,
-footer a:hover,
 header p a:hover,
 footer p a:hover {
 	color: #1e1e1c;
 	background: none;
-	}
+	}*/
 
-header h1 a:hover,
-footer h1 a:hover,
-header a:hover,
-footer a:hover,
-header p a:hover,
-footer p a:hover {
- 	background: #bf66e5;
- 	color: #fff;
+header a.active,
+footer a.active {
+ 	color: #bf66e5;
 	}
 
 .container {
@@ -303,7 +319,7 @@ h5 a {
 p a {
 	color: #131313;
 	text-decoration: none;
-	border-bottom: 2px dotted #bf66e5;
+	/* border-bottom: 2px dotted #bf66e5; */
 	}
 
 p a:hover,
@@ -311,9 +327,9 @@ p a:active,
 h3 a:hover,
 h5 a:hover {
 	text-decoration: none;
-	color: #fff;
-	background: #bf66e5;
-	border-color: transparent;
+	color: #bf66e5;
+	/* background: #bf66e5; 
+	border-color: transparent;*/
 	cursor: pointer;
 	}
 
@@ -395,15 +411,15 @@ span.tags span:last-child:after {
 	}
 	
 #about .post {
-	float: right;
 	padding-bottom: 60px;
-	max-width: 708px;
+	max-width: 600px;
+	margin: 0 auto;
 	}
 	
 #about .post p, #published h6 {
-	font-size: 32px;
-	line-height: 48px;
-	margin-bottom: 48px;
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 36px;
 	width: 100%;
 	max-width: 100%;
 	text-align: left;
@@ -674,13 +690,12 @@ blockquote p {
   
 #about .post {
 	float: none;
+	padding-left: 0;
 }
   
 #about .post p {
 	width: 100%;
 	text-align: left;
-	font-size: 32px;
-	line-height: 48px;
 	}	
 
 #about .post {
