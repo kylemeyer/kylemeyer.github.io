@@ -42,7 +42,7 @@ img {
   }
 
 a {
-  background: linear-gradient(0deg, #a557c9, #a557c9) no-repeat right bottom / 0 var(--bg-h);
+  background: linear-gradient(0deg, #af69d1, #af69d1) no-repeat right bottom / 0 var(--bg-h);
   transition: background-size 350ms;
   padding-bottom: 2px;
   --bg-h: 1px;
@@ -50,7 +50,7 @@ a {
   color: inherit;
   line-height: 1;
   cursor: pointer;
-  color: #a557c9;
+  color: #af69d1;
 }
 
 a:where(:hover, :focus-visible),
