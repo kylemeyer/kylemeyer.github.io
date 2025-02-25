@@ -21,12 +21,12 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 *::-moz-selection {
     background: #00a36c;
-    color: #1e1e1e;
+    color: #1b161f;
 	}
 
 *::selection {
     background: #00a36c;
-    color: #1e1e1e;
+    color: #1b161f;
 	}
   
 strong, b {
